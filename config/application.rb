@@ -1,5 +1,8 @@
-require_relative 'boot'
+# frozen_string_literal: true
 
+# Appication
+#
+require_relative 'boot'
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
@@ -7,6 +10,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module Login
+  # Class login
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
