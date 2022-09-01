@@ -3,6 +3,7 @@
 # Application Controller
 #
 class ApplicationController < ActionController::Base
+  include Pundit::Authorization
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   protected
