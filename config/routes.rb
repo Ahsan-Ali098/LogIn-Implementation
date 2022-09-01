@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root to: 'devise/sessions#new'
+  root to: 'admins#index'
   devise_for :admins
-  resources :admins
+  # resources :admins
 end
